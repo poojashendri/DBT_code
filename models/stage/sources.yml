@@ -10,7 +10,11 @@ sources:
       - name: regions
       - name: lineitems
       - name: orders
+        loaded_at_field: o_orderdate::timestamp
+        freshness:
+          warn_after: {count: 1, period: day}
+          error_after: {count: 3, period: day}
       - name: parts
       - name: partsupps
       - name: suppliers
-      
+
