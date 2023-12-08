@@ -9,6 +9,7 @@ sources:
       - name: nations
       - name: regions
       - name: lineitems
+        description: '{{doc("test")}}'
       - name: orders
         loaded_at_field: o_orderdate::timestamp
         freshness:
