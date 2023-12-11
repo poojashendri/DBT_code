@@ -18,6 +18,8 @@ changed as (
 
         -- numbers
         o_totalprice as total_price,
+        {{dollar_to_euro('o_totalprice',3)}} as total_price_euro,
+        {{dollar_to_inr('o_totalprice',3)}} as total_price_inr,
 
         -- statuses
         o_orderstatus as status_code,
