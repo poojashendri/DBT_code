@@ -41,3 +41,10 @@ models:
     # +materialized: table
     stage:
       +materialized: table
+    # marts:
+    #   +materialized: incremental
+
+vars:
+  mkts: HOUSEHOLD
+  euro: 0.92
+  inr: 0.83
